@@ -13,4 +13,8 @@ def calc_infos(ip_rede):
     print(f"Total de endereços disponíveis: {rede.num_addresses - 2}") # -2, pois tira o endereço da rede e o broadcast
 print("Calculadora de IP")
 print("-="*25)
-calc_infos("192.168.1.0/24")
+print("Formato: ")
+print("Ex: 127.0.0.1/24")
+network = input('Digite a rede que queres mapear: ').strip()
+print("-" * 50)
+calc_infos(network)
