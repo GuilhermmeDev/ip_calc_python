@@ -43,7 +43,7 @@ def calculaRede(ip, mask):
         {'Descrição': 'Classe de Rede', 'Valor': network_class},
         {'Descrição': 'Qtd. SubRedes', 'Valor': results.num_addresses},
         {'Descrição': 'Hosts por SubNet', 'Valor': results.num_addresses - 2},
-        {'Descrição': 'Endereço Público/Privado', 'Valor': "Público" if results.is_private else "Privado"}
+        {'Descrição': 'Endereço Público/Privado', 'Valor': "Privado" if results.is_private else "Público"}
     ]
     st.dataframe(results_view, width=1000)
 
